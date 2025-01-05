@@ -24,5 +24,15 @@ public class Main {
         }
 
 
+        // Use case 3: Compare two lines
+        int comparisonResult = line1.compareTo(line2);
+        if (comparisonResult == 0) {
+            System.out.println("Line 1 is equal to Line 2");
+        } else if (comparisonResult > 0) {
+            System.out.println("Line 1 is longer than Line 2");
+        } else {
+            System.out.println("Line 1 is shorter than Line 2");
+        }
+
     }
 }
