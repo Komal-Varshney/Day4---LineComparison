@@ -15,13 +15,13 @@ public class Line {
     }
 
     // Override equals method to check equality of lengths
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Line otherLine = (Line) obj;
+    public boolean hasSameLengthAs(Line otherLine) {
+        if (otherLine == null) {
+            return false;
+        }
         return Double.compare(this.calculateLength(), otherLine.calculateLength()) == 0;
     }
+
 
     // Implement compareTo method to compare two line lengths
     public int compareTo(Line otherLine) {

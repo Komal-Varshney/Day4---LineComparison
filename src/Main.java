@@ -7,7 +7,7 @@ public class Main {
 
         // use case 1
         // Calculate length of the first line
-        Line line1 = new Line(new Point(1, 2), new Point(4, 6));
+        Line line1 = new Line(new Point(1, 3), new Point(4, 6));
         double length1 = line1.calculateLength();
         System.out.println("Length of Line 1: " + length1);
 
@@ -15,6 +15,13 @@ public class Main {
         Line line2 = new Line(new Point(2, 3), new Point(5, 7));
         double length2 = line2.calculateLength();
         System.out.println("Length of Line 2: " + length2);
+
+        // USE CASE 2: Checking equality of line's length
+        if (line1.hasSameLengthAs(line2)) {
+            System.out.println("Line 1 is equal to Line 2");
+        } else {
+            System.out.println("Line 1 is not equal to Line 2");
+        }
 
 
     }
